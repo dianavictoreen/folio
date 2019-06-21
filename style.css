@@ -82,7 +82,7 @@ background-color: rgb(249, 249, 246)
 }
 
 
-#m1, #m2, #m3, #m4, #m5, #m6, #m7, #m8, #m9 {
+#m1, #m2, #m3, #m4, #m5, #m6, #m7, #m8, #m9, #m12{
   width: 15px;
   margin: 0px 5px 0px 15px;
   height: 15px;
@@ -155,9 +155,17 @@ background-color: rgb(249, 249, 246)
 }
 
 .tangerine {
-  width: 27%;
+  width: 10%;
   height: auto;
-  margin: 12% 5% 0% 62%;
+  margin: 4% 5% 0% 5%;
+  min-width: 100px;
+}
+
+.swans {
+  width: 40%;
+  min-width: 250px;
+  height: auto;
+  margin: 9% 5% 0% 58%;
 }
 
 .cat {
@@ -261,35 +269,60 @@ background-color: rgb(249, 249, 246)
 }
 
 #contact {
-width: 30%;
-margin: 10% 35% 0% 35%;
+width: auto;
 height: 150px;
 position: absolute;
 box-sizing: border-box;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 overflow: hidden;
 border-radius: 2px;
-animation: float 10s ease-in-out infinite;
 display: none;
 opacity: 0;
-transition: .8s ease-in-out;
+z-index: 9999;
+BORDER: 1PX SOLID BLACK;
+}
+
+#request {
+width: 30%;
+height: auto;
+position: absolute;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+overflow: hidden;
+border-radius: 2px;
+display: none;
+z-index: 9999;
+BORDER: 1PX SOLID BLACK;
+background-color: #ffe6dd;
+}
+
+#request .divheader{
+ height: 40px;
+ width: 100%;
+ cursor: move;
+ box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.03);
+ color: black;
+ BACKGROUND-COLOR: #ffe6dd;
+ BORDER-BOTTOM: 1PX SOLID BLACK;  
 }
 
 #contact .divheader {
  height: 40px;
  width: 100%;
- cursor: default;
+ cursor: move;
  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.03);
  color: black;
- background-color: #fff;
+ BACKGROUND-COLOR: #fff875;
+ BORDER-BOTTOM: 1PX SOLID BLACK; 
+/*  background-color: #fff;
  background-image: linear-gradient(180deg, rgba(242, 242, 242, 0) -80.88%, #DBD9D9 154.39%);
- border-radius: 5px 5px 0px 0px;
+ border-radius: 5px 5px 0px 0px; */
 }
 
-#contact h1.header {
-    font-family: agitalic;
+#contact h1.header, #request h1.header {
+    font-family: source-code-pro, monospace;
     font-style: normal;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 16px;
     margin: 10px 25px 0px 25px;
     display: inline-block;
@@ -300,13 +333,13 @@ transition: .8s ease-in-out;
 }
 
 
-#m10 {
+#m10, #m11 {
   width: 15px;
   margin: 0px 5px 0px 15px;
   height: 15px;
   cursor: pointer;
   display: inline-block;
-  background-image: url("https://cdn.glitch.com/56c2dac2-3e5f-44ed-a28e-ea6d530500fd%2FVector%20(2).png?v=1560603503641"); 
+  background-image: url("https://cdn.glitch.com/56c2dac2-3e5f-44ed-a28e-ea6d530500fd%2FVector%20(1).png?v=1560596067300"); 
   background-size: cover;
   background-position: center center no-repeat;
   z-index: 9999; 
@@ -323,6 +356,9 @@ button.mailbutton {
   text-align: center;
   outline: none;
   cursor: pointer;
+  background-color: #fff875;
+  FONT-WEIGHT: bold;
+  font-style: italic
 }
 
 
@@ -338,15 +374,15 @@ button:focus {
   outline: none;
 }
 
-.maillink {
-  font-size: 22px;
-  text-decoration: underline;
+.maillink, #request h2.bodytext {
+  font-size: 18px;
+  padding: 20px;
   margin-bottom: 5px;
   transition: .5s ease-in-out;
 }
 
 .maillink:hover {
-  color: blue;
+  text-decoration: underline;
 }
 
 
@@ -400,7 +436,7 @@ button:focus {
 .sec2 {
   height: 300px;
   width: 100%;
-  padding: 50px 0px 0px 0px;
+  padding: 100px 0px 0px 0px;
   font-family: source-code-pro, monospace;
   font-style: normal;
   font-weight: 200;
@@ -418,7 +454,7 @@ button:focus {
   transition: transform 0.6s;
   animation: float 4s ease-in-out infinite;
   cursor: pointer;
- 
+  z-index: -999;
 }
 
 .sec3 {
@@ -434,7 +470,7 @@ button:focus {
 
 .sec4 {
   width: 100%;
-  height: 130vh;
+  height: 150vh;
   position: relative;
 }
 
@@ -464,7 +500,7 @@ border-radius: 2px;
 
 .talldiv {
 transition: all 0.5s ease;
-width: 400px;
+width: 450px;
 height: auto;
 position: absolute;
 box-sizing: border-box;
@@ -499,7 +535,8 @@ h1.header {
 }
 
 h1.bodytext {
-  font-family: source-code-pro, monospace;
+  font-family: agitalic;
+  text-transform: uppercase;
   color: black;
   font-size: 22px;
   font-weight: semi-bold;
@@ -676,6 +713,7 @@ span.dst {
   transition: transform 0.6s;
   animation: float 4s ease-in-out infinite;
   cursor: pointer;
+  z-index: -1;
  
 }
 
@@ -691,7 +729,7 @@ span.dst {
 
 .sec4 {
   width: 100%;
-  height: 800px;
+  height: 1300px;
   position: relative;
 }
 
@@ -758,6 +796,7 @@ h1.header {
 
 h1.bodytext {
   font-family: agregular;
+  text-transform: uppercase;
   color: black;
   font-size: 22px;
   font-weight: semi-bold;
