@@ -188,16 +188,16 @@ $(document).ready(function () {
   $("#drag7").css({"top": "280px", "left":"7vw"});
   $("#drag9").css({"top": "550px", "left":"2vw"});
   } else {
-  $("#drag1").css({"top": "5vh", "left":"10vw"});
-  $("#drag2").css({"top": "20vh", "left":"50vw"});
-  $("#drag3").css({"top": "110vh", "left":"5vw"});
-  $("#drag4").css({"top": "130vh", "left":"60vw"});
-  $("#drag5").css({"top": "15vh", "left":"10vw"});
-  $("#drag8").css({"top": "-5vh", "left":"50vw"});
-  $("#drag10").css({"top":"75vh", "left":"60vw"});
+  $("#drag1").css({"top": "15vh", "left":"15vw"});
+  $("#drag2").css({"top": "110vh", "left":"60vw"});
+  $("#drag3").css({"top": "140vh", "left":"12vw"});
+  $("#drag4").css({"top": "-5vh", "left":"60vw"});
+  $("#drag5").css({"top": "0vh", "left":"10vw"});
+  $("#drag8").css({"top": "120vh", "left":"10vw"});
+  $("#drag10").css({"top":"15vh", "left":"55vw"});
   $("#drag6").css({"top": "10vh", "left":"7vw"});
-  $("#drag7").css({"top": "45vh", "left":"47vw"});
-  $("#drag9").css({"top": "99vh", "left":"10vw"}); 
+  $("#drag7").css({"top": "-30vh", "left":"50vw"});
+  $("#drag9").css({"top": "80vh", "left":"30vw"}); 
   };
   
 });
@@ -206,7 +206,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $("#arrow").click(function() {
   $('html, body').animate({
-    scrollTop: $("div.sec3").offset().top
+    scrollTop: $("div.sec4").offset().top
   }, 1000);
   $("#print").addClass('current');
   $("#ui").removeClass('current');
@@ -260,7 +260,7 @@ $("#m1").click(function() {
    if ($(window).width() < 768) {
   $("#drag1").css({"top": "5vh", "left":"10vw", "position":"absolute"}).removeClass('fullscreen');
   } else {
-  $("#drag1").css({ "position":"absolute"}).animate({"top": "5vh", "left":"10vw"}, 500).removeClass('fullscreen');  
+  $("#drag1").css({ "position":"absolute"}).animate({"top": "15vh", "left":"15vw"}, 500).removeClass('fullscreen');  
   };
    $(".desktop").removeClass('display');
    $(".mobile").removeClass('display');  
@@ -290,7 +290,7 @@ $("#m2").click(function() {
    if ($(window).width() < 768) {
   $("#drag2").css({"top": "450px", "left":"8vw", "position":"absolute"}).removeClass('fullscreen');
   } else {
-  $("#drag2").css({ "position":"absolute"}).animate({"top": "20vh", "left":"50vw"}, 500).removeClass('fullscreen'); 
+  $("#drag2").css({ "position":"absolute"}).animate({"top": "110vh", "left":"60vw"}, 500).removeClass('fullscreen'); 
   };
    $('body,html').css('overflow-y','auto');
 });
@@ -317,7 +317,7 @@ $("#m3").click(function() {
    if ($(window).width() < 768) {
   $("#drag3").css({"top": "850px", "left":"2vw", "position":"absolute"}).removeClass('fullscreen');
   } else {
-  $("#drag3").css({ "position":"absolute"}).animate({"top": "110vh", "left":"5vw"}, 500).removeClass('fullscreen');
+  $("#drag3").css({ "position":"absolute"}).animate({"top": "140vh", "left":"12vw"}, 500).removeClass('fullscreen');
   };
    $('body,html').css('overflow-y','auto');
 });
@@ -343,7 +343,7 @@ $("#m4").click(function() {
    if ($(window).width() < 768) {
    $("#drag4").css({"top": "1350px", "left":"15vw", "position":"absolute"}).removeClass('fullscreen');
    } else {
-   $("#drag4").css({ "position":"absolute"}).animate({"top": "130vh", "left":"60vw"}, 500).removeClass('fullscreen');  
+   $("#drag4").css({ "position":"absolute"}).animate({"top": "-5vh", "left":"60vw"}, 500).removeClass('fullscreen');  
    };
    $('body,html').css('overflow-y','auto');
 });
@@ -391,7 +391,7 @@ $("#m5").click(function() {
    if ($(window).width() < 768) {
    $("#drag5").css({"top": "300px", "left":"5vw", "position":"absolute"}).removeClass('fullscreen');
    } else {
-   $("#drag5").css({ "position":"absolute"}).animate({"top": "25vh", "left":"60vw"}, 500).removeClass('fullscreen'); 
+   $("#drag5").css({ "position":"absolute"}).animate({"top": "0vh", "left":"10vw"}, 500).removeClass('fullscreen'); 
    };
    $('body,html').css('overflow-y','auto');
 });
@@ -443,7 +443,7 @@ $("#m7").click(function() {
    if ($(window).width() < 768) {
    $("#drag7").css({"top": "280px", "left":"15vw", "position":"absolute"}).removeClass('fullscreen');
    } else {
-   $("#drag7").css({ "position":"absolute"}).animate({"top": "35vh", "left":"74vw"}, 500).removeClass('fullscreen');   
+   $("#drag7").css({ "position":"absolute"}).animate({"top": "-30vh", "left":"50vw"}, 500).removeClass('fullscreen');   
    };
    $('body,html').css('overflow-y','auto');
 });
@@ -469,7 +469,7 @@ $("#m8").click(function() {
    if ($(window).width() < 768) {
    $("#drag8").css({"top": "495px", "left":"5vw", "position":"absolute"}).removeClass('fullscreen');
    } else {
-   $("#drag8").css({ "position":"absolute"}).animate({"top": "-5vh", "left":"50vw"}, 500).removeClass('fullscreen');
+   $("#drag8").css({ "position":"absolute"}).animate({"top": "120vh", "left":"10vw"}, 500).removeClass('fullscreen');
    };
    $('body,html').css('overflow-y','auto');
 });
@@ -495,7 +495,7 @@ $("#m9").click(function() {
    if ($(window).width() < 768) {
    $("#drag9").css({"top": "550px", "left":"2vw", "position":"absolute"}).removeClass('fullscreen');
    } else {
-   $("#drag9").css({ "position":"absolute"}).animate({"top": "99vh", "left":"10vw"}, 500).removeClass('fullscreen');   
+   $("#drag9").css({ "position":"absolute"}).animate({"top": "80vh", "left":"30vw"}, 500).removeClass('fullscreen');   
    };
    $('body,html').css('overflow-y','auto');
 });
@@ -522,7 +522,7 @@ $("#m12").click(function() {
    if ($(window).width() < 768) {
    $("#drag10").css({"top": "775px", "left":"7vw", "position":"absolute"}).removeClass('fullscreen');
    } else {
-   $("#drag10").css({ "position":"absolute"}).animate({"top":"75vh", "left":"60vw"}, 500).removeClass('fullscreen');   
+   $("#drag10").css({ "position":"absolute"}).animate({"top":"15vh", "left":"55vw"}, 500).removeClass('fullscreen');   
    };
    $('body,html').css('overflow-y','auto');
 });
